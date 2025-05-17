@@ -11,3 +11,4 @@ spec:
 
 ---
 # kubectl debug nginx-01 -it --image=redhat/ubi9
+# kubectl debug nginx-01 -it --image=rkalluru/debug
