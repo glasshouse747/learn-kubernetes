@@ -4,8 +4,8 @@ metadata:
   name: pod-demo-storage
 spec:
   volumes:
-    name: html
-    emptyDir: {}
+   - name: html
+     emptyDir: {}
   containers:
     - name: nginx
       image: nginx
