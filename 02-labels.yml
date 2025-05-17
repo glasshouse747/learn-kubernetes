@@ -4,6 +4,8 @@ metadata:
   name: nginx-01
   labels:
     podName: nginx-01
+    project: example
+    appName: example02
 spec:
   containers:
     - name: nginx
@@ -17,6 +19,8 @@ metadata:
   name: nginx-02
   labels:
     podName: nginx-02
+    project: example
+    appName: example02
 spec:
   containers:
     - name: nginx
@@ -30,6 +34,8 @@ metadata:
   name: nginx-03
   labels:
     podName: nginx-03
+    project: example
+    appName: example02
 spec:
   containers:
     - name: nginx
@@ -43,6 +49,8 @@ metadata:
   name: nginx-04
   labels:
     podName: nginx-04
+    project: example
+    appName: example02
 spec:
   containers:
     - name: nginx
