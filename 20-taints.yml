@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-non-tolerated
+spec:
+  containers:
+    - name: nginx
+      image: nginx:1.14.2
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-tolerated
+spec:
+  containers:
+    - name: nginx
+      image: nginx:1.14.2
+  tolerations:
+    - key: "project"
+      operator: "Equal"
+      value: "roboshop"
+      effect: "NoSchedule"
